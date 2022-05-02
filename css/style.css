@@ -1,0 +1,193 @@
+/*--- Header Nav ---*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px, 20px, 0, 20px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul:last-child {
+    margin-right: 20px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: #707070;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    font-size: 20px;
+    font-family: 'helvetica';
+}
+
+header nav ul li a:hover {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+.body-bg {
+    background-color: #FDFAF7;
+}
+
+header #logo {
+    height: 50%;
+    width: 50%;
+    align-self: center;
+}
+
+
+/*--------------------*/
+
+#contactUs {
+    text-align: center;
+    align-self: center;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+#contact-form {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.img {
+    width: 100%;
+}
+
+
+/*--- text ---*/
+
+.text-color {
+    color: #41474A;
+}
+
+.btn-color {
+    background-color: #e3cbb3;
+}
+
+
+/*--- Author Section ---*/
+
+#author p {
+    font-family: 'sans serif', 'helvetica';
+}
+
+#author div h2 {
+    font-size: 40px;
+}
+
+#tag {
+    margin-top: 20%;
+    border-style: solid;
+    border-color: #dea77d;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 25px;
+}
+
+.taglineName {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*---- Copyright ----*/
+
+#cr {
+    margin-top: 20%;
+    text-align: center;
+}
+
+
+/*--- Group & item ---*/
+
+.author {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 5px;
+}
+
+.item-double {
+    flex: 2;
+}
+
+.space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 20px, 20px, 0, 20px;
+        text-align: center;
+    }
+    header #logo img {
+        width: 10%;
+    }
+    .author1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .authorAbout {
+        display: flex;
+        flex-direction: row;
+    }
+    #authorName {
+        text-align: right;
+        align-self: center;
+        font-size: 30px;
+    }
+    #bio {
+        text-align: left;
+        align-self: left;
+        font-size: 25px;
+    }
+    #author div h2 {
+        font-size: 70px;
+    }
+    .tagline-lg {
+        text-align: center;
+        font-size: 40px;
+    }
+    .taglineName-lg {
+        font-size: 30px;
+        text-align: center;
+    }
+    .cardsLG {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
